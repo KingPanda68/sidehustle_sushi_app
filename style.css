@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  background-image: url(./Assets/sushi\ shop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  height: 850px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 300px;
+}
+
+h1 {
+  width: 830px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+}
+
+p {
+  width: 822px;
+  height: 62px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 60px;
+  margin-top: 1rem;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 3.82%;
+  right: 94.79%;
+}
+
+.right-arrow {
+  position: absolute;
+  left: 94.44%;
+  right: 4.17%;
+  float: right;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+button {
+  width: 250px;
+  height: 80px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 38px;
+}
