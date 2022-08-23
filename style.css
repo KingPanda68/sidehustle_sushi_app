@@ -6,7 +6,8 @@
 body {
   font-family: "Mulish", sans-serif;
   font-style: normal;
-  background-image: url(./Assets/sushi\ shop.png);
+  background-image: url(./Assets/background.jpg);
+  backdrop-filter: blur(4px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,15 +22,16 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 h1 {
   width: 830px;
   height: 75px;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 65px;
   line-height: 75px;
+  text-align: center;
 }
 
 p {
@@ -76,4 +78,17 @@ button {
   font-weight: 300;
   font-size: 30px;
   line-height: 38px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.cart {
+  margin-left: 1rem;
+  background-color: black;
+  color: whitesmoke;
+}
+
+a :hover {
+  background-color: greenyellow;
+  color: black;
 }
