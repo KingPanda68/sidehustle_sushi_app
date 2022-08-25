@@ -231,20 +231,23 @@ input {
   .sidebar {
     display: none;
   }
+  html,
   body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
   main {
     margin-left: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-left: 2rem;
   }
   .menu {
     margin-left: 0;
-    width: 100%;
+    width: 80%;
   }
   h2,
   hr {
@@ -253,6 +256,8 @@ input {
   .top_list,
   .bottom_list {
     flex-direction: column;
+    width: 224px;
+    margin: auto;
   }
   figure {
     margin-top: 1rem;
@@ -293,11 +298,19 @@ input {
     font-size: 15px;
   }
   .load {
-    margin-left: 0;
+    margin-left: 20%;
+    margin-bottom: 2rem;
+  }
+  .nav_menu {
+    padding: 0;
   }
 }
 
 .lnr-menu {
   color: black;
-  float: left;
+  float: right;
+  width: auto;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: right;
 }
