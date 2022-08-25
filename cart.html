@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <h1 class="init">K.</h1>
+                <ul>
+                    <li><a href="index.html"><svg class="lnr lnr-home">
+                                <use xlink:href="#lnr-home"></use>
+                            </svg></a></li>
+                    <li><a href="menu.html"><svg class="lnr lnr-dinner">
+                                <use xlink:href="#lnr-dinner"></use>
+                            </svg></a></li>
+                    <li><a href="cart.html" class="active"><svg class="lnr lnr-cart">
+                                <use xlink:href="#lnr-cart"></use>
+                            </svg></a></li>
+                    <li><a href="#"><svg class="lnr lnr-map-marker">
+                                <use xlink:href="#lnr-map-marker"></use>
+                            </svg></a></li>
+                    <li><a href="#"><svg class="lnr lnr-exit">
+                                <use xlink:href="#lnr-exit"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h2>CART</h2>
+                <hr style="width: 110px;">
+                <div style="display: flex; height: 70%;">
+                    <div class="left">
+                        <div class="counter_container">
+                            <div class="circle">
+                            </div>
+                            <div style="align-self: center; margin-left: 2rem; padding: 10px; width: 23%;">
+                                <h4>Bread and Beans</h4>
+                                <p style="margin-top: 1rem;">$20.00</p>
+                            </div>
+                            <div class="counter">
+                                <p class="count_btn" style="margin-right: 1rem;">-</p>
+                                <div class="number">
+                                    <p>1</p>
+                                </div>
+                                <p class="count_btn" style="margin-left: 1rem;">+</p>
+                            </div>
+                            <div style="align-self: center; margin-left: 5rem;">
+                                <svg class="lnr lnr-cross" id="remove">
+                                    <use xlink:href="#lnr-cross"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="counter_container">
+                            <div class="circle_two">
+                            </div>
+                            <div style="align-self: center; margin-left: 2rem; padding: 10px; width: 23%;">
+                                <h4>Jollof Rice</h4>
+                                <p style="margin-top: 1rem;">$10.00</p>
+                            </div>
+                            <div class="counter">
+                                <p class="count_btn" style="margin-right: 1rem;">-</p>
+                                <div class="number">
+                                    <p>4</p>
+                                </div>
+                                <p class="count_btn" style="margin-left: 1rem;">+</p>
+                            </div>
+                            <div style="align-self: center; margin-left: 5rem;">
+                                <svg class="lnr lnr-cross" id="remove">
+                                    <use xlink:href="#lnr-cross"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="counter_container">
+                            <div class="circle_three">
+                            </div>
+                            <div style="align-self: center; margin-left: 2rem; padding: 10px; width: 23%;">
+                                <h4>Suya</h4>
+                                <p style="margin-top: 1rem;">$30.00</p>
+                            </div>
+                            <div class="counter">
+                                <p class="count_btn" style="margin-right: 1rem;">-</p>
+                                <div class="number">
+                                    <p>10</p>
+                                </div>
+                                <p class="count_btn" style="margin-left: 1rem;">+</p>
+                            </div>
+                            <div style="align-self: center; margin-left: 5rem;">
+                                <svg class="lnr lnr-cross" id="remove">
+                                    <use xlink:href="#lnr-cross"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="counter_container">
+                            <div class="circle_four">
+                            </div>
+                            <div style="align-self: center; margin-left: 2rem; padding: 10px; width: 23%;">
+                                <h4>Oha Soup</h4>
+                                <p style="margin-top: 1rem;">$15.00</p>
+                            </div>
+                            <div class="counter">
+                                <p class="count_btn" style="margin-right: 1rem;">-</p>
+                                <div class="number">
+                                    <p>1</p>
+                                </div>
+                                <p class="count_btn" style="margin-left: 1rem;">+</p>
+                            </div>
+                            <div style="align-self: center; margin-left: 5rem;">
+                                <svg class="lnr lnr-cross" id="remove">
+                                    <use xlink:href="#lnr-cross"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right" style="display: flex; flex-direction: column; margin-left: 2rem;">
+                        <div class="order">
+                            <div style="max-width: 70%; margin-left: 2rem;">
+                                <h2 style="margin-top: 2rem;">Your Subtotal</h2>
+                                <p style="color: rgba(0, 0, 0, 0.8); margin-top: 2rem; font-size: 30px;">Subtotal $80.00
+                                </p>
+                                <input type="submit" value="Confirm Order"
+                                    style="width: 365px; background-color: black; color: white;">
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div style="max-width: 70%; margin-left: 2rem;">
+                                <h2 style="margin-top: 2rem;">Promo Code</h2>
+                                <form action="">
+                                    <input type="text" placeholder="enter promo code"
+                                        style="font-weight: 200; text-align: left; padding-left: 1rem;"> <br>
+                                    <input type="submit" value="Apply"
+                                        style="width: 166px; background-color: black; color: white;">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+</body>
+
+</html>

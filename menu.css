@@ -106,3 +106,116 @@ button {
   margin-left: 28rem;
   margin-top: 2rem;
 }
+
+/* CSS for cart.html */
+
+.left {
+  width: 608px;
+  height: 600px;
+  background: #f1d5bb;
+  border-radius: 3px;
+}
+
+.order {
+  width: 443px;
+  height: 286px;
+  background: #f1d5bb;
+  border-radius: 3px;
+}
+
+.promo {
+  width: 443px;
+  height: 326px;
+  background: #ffffff;
+  border: 1px solid #f1d5bb;
+  border-radius: 3px;
+}
+
+input {
+  height: 78px;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 2rem;
+  border: 1px solid #f1d5bb;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.counter {
+  display: flex;
+  padding: 10px;
+  align-self: center;
+  margin-left: 3rem;
+  left: 660px;
+  cursor: pointer;
+}
+
+.number {
+  background-color: white;
+  width: 46px;
+  height: 35px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: text;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-image: url(./Assets/ewa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.circle_two {
+  width: 90px;
+  height: 90px;
+  background-image: url(./Assets/jollof.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.circle_three {
+  width: 90px;
+  height: 90px;
+  background-image: url(./Assets/suya.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.circle_four {
+  width: 90px;
+  height: 90px;
+  background-image: url(./Assets/oha.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.counter_container {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+#remove {
+  padding: 0;
+  width: 20px;
+  color: black;
+}
+
+.count_btn {
+  width: 12px;
+  height: 25px;
+  font-weight: 400;
+  font-size: 25px;
+}
