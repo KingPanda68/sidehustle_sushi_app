@@ -219,3 +219,85 @@ input {
   font-weight: 400;
   font-size: 25px;
 }
+
+@media (min-width: 800px) {
+  .sidemenu,
+  .nav_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  main {
+    margin-left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: 2rem;
+  }
+  .menu {
+    margin-left: 0;
+    width: 100%;
+  }
+  h2,
+  hr {
+    width: 200px;
+  }
+  .top_list,
+  .bottom_list {
+    flex-direction: column;
+  }
+  figure {
+    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+  }
+  .sidemenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    overflow: hidden;
+    padding-top: 3rem;
+    transition: 0.5s;
+  }
+  .sidemenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidemenu a:hover {
+    background-color: #f1d5bb;
+    color: black;
+  }
+  .sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    float: right;
+    padding: 0;
+  }
+  .lnr-cross {
+    padding: 0;
+    font-size: 15px;
+  }
+  .load {
+    margin-left: 0;
+  }
+}
+
+.lnr-menu {
+  color: black;
+  float: left;
+}

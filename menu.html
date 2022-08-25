@@ -8,11 +8,39 @@
   <title>Menu</title>
   <link rel="stylesheet" href="menu.css" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Mulish&display=swap" rel="stylesheet" />
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+  </script>
 </head>
 
 <body>
   <main>
-    <div class="container">
+    <div id="mySidenav" class="sidemenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><svg class="lnr lnr-cross">
+          <use xlink:href="#lnr-cross"></use>
+        </svg></a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="#">Location</a>
+      <a href="#">Logout</a>
+    </div>
+    <div class="nav_menu" onclick="openNav()">
+      <svg class="lnr lnr-menu">
+        <use xlink:href="#lnr-menu"></use>
+      </svg>
+    </div>
+    <div class="container" id="main">
       <div class="sidebar">
         <h1 class="init">K.</h1>
         <ul>
@@ -74,7 +102,7 @@
             <figcaption>Oha Soup</figcaption>
           </figure>
         </div>
-        <a href="#"><button>LOAD MORE</button></a>
+        <a href="#"><button class="load">LOAD MORE</button></a>
       </div>
     </div>
   </main>
