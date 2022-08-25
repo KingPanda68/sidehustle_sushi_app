@@ -101,10 +101,10 @@ a :hover {
   }
   main {
     margin-top: 4rem;
-    margin-left: 1rem;
     margin-right: 0;
+    margin-left: 2rem;
     width: 80%;
-    text-align: center;
+    overflow-x: hidden;
   }
   h1 {
     width: 100%;
