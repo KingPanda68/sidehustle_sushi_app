@@ -165,12 +165,12 @@ input {
 
 .number {
   background-color: white;
-  width: 46px;
+  width: 40px;
   height: 35px;
+  text-align: center;
+  align-content: center;
+  margin-top: 0;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: text;
 }
 
@@ -214,10 +214,22 @@ input {
   border-radius: 50%;
 }
 
+.food_name {
+  align-self: center;
+  margin-left: 2rem;
+  padding: 10px;
+  width: 23%;
+}
+
 .counter_container {
   display: flex;
   margin-top: 2rem;
   margin-left: 2rem;
+}
+
+.remove {
+  align-self: center;
+  margin-left: 5rem;
 }
 
 #remove {
@@ -323,6 +335,24 @@ input {
   .right {
     margin-left: 0;
     margin-top: 2rem;
+  }
+  .circle,
+  .circle_two,
+  .circle_four,
+  .circle_three {
+    display: none;
+  }
+  .food_name {
+    width: 15%;
+  }
+  .food_name {
+    margin-left: 0;
+  }
+  .counter {
+    margin-left: 1rem;
+  }
+  .remove {
+    margin-left: 2rem;
   }
 }
 
