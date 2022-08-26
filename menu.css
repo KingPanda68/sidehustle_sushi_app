@@ -111,9 +111,22 @@ button {
 
 .left {
   width: 608px;
-  height: 600px;
+  height: 530px;
   background: #f1d5bb;
   border-radius: 3px;
+}
+
+.right {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.heads {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 .order {
@@ -132,8 +145,8 @@ button {
 }
 
 input {
-  height: 78px;
-  font-size: 30px;
+  height: 70px;
+  font-size: 25px;
   font-weight: 200;
   text-align: center;
   margin-top: 2rem;
@@ -303,6 +316,13 @@ input {
   }
   .nav_menu {
     padding: 0;
+  }
+  .mobile {
+    flex-direction: column;
+  }
+  .right {
+    margin-left: 0;
+    margin-top: 2rem;
   }
 }
 

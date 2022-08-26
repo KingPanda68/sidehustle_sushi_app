@@ -7,10 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="menu.css">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginTop = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginTop = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
 </head>
 
 <body>
     <main>
+        <div id="mySidenav" class="sidemenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><svg class="lnr lnr-cross">
+                    <use xlink:href="#lnr-cross"></use>
+                </svg></a>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="#">Location</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="nav_menu" onclick="openNav()">
+            <svg class="lnr lnr-menu">
+                <use xlink:href="#lnr-menu"></use>
+            </svg>
+        </div>
         <div class="container">
             <div class="sidebar">
                 <h1 class="init">K.</h1>
@@ -35,7 +63,7 @@
             <div class="menu">
                 <h2>CART</h2>
                 <hr style="width: 110px;">
-                <div style="display: flex; height: 70%;">
+                <div style="display: flex; height: 70%;" class="mobile">
                     <div class="left">
                         <div class="counter_container">
                             <div class="circle">
@@ -118,24 +146,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right" style="display: flex; flex-direction: column; margin-left: 2rem;">
+                    <div class="right">
                         <div class="order">
                             <div style="max-width: 70%; margin-left: 2rem;">
-                                <h2 style="margin-top: 2rem;">Your Subtotal</h2>
-                                <p style="color: rgba(0, 0, 0, 0.8); margin-top: 2rem; font-size: 30px;">Subtotal $80.00
+                                <h2 class="heads">Your Subtotal</h2>
+                                <p style="color: rgba(0, 0, 0, 0.8); margin-top: 2rem; font-size: 20px;">
+                                    <strong>Subtotal</strong> $75.00
                                 </p>
                                 <input type="submit" value="Confirm Order"
-                                    style="width: 365px; background-color: black; color: white;">
+                                    style="width: 300px; background-color: black; color: white;">
                             </div>
                         </div>
                         <div class="promo">
                             <div style="max-width: 70%; margin-left: 2rem;">
-                                <h2 style="margin-top: 2rem;">Promo Code</h2>
+                                <h2 class="heads">Promo Code</h2>
                                 <form action="">
                                     <input type="text" placeholder="enter promo code"
                                         style="font-weight: 200; text-align: left; padding-left: 1rem;"> <br>
                                     <input type="submit" value="Apply"
-                                        style="width: 166px; background-color: black; color: white;">
+                                        style="width: 150px; background-color: black; color: white;">
                                 </form>
                             </div>
                         </div>
